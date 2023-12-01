@@ -102,6 +102,7 @@ video {
 }
 
 .share-button {
+  margin-bottom: 38px;
   width: 324px;
   background-color: #d9d9d9;
   border: none;
@@ -252,21 +253,13 @@ video {
     font-size: 24px;
   }
 
-  /* .game-img-wrap {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  } */
-
-  #game {
-  }
-
   .game-img-wrap {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 100%;
     left: 0;
-    top: 4%;
+    bottom: 0;
   }
 
   .game-img {
@@ -279,6 +272,7 @@ video {
   }
 
   .share-button {
+    margin-bottom: 4px;
     width: 12rem;
     padding: 5%;
     font-size: 50%;
@@ -301,4 +295,75 @@ video {
   background-color: #ff5a35;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 430px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  .header > .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header > div {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .menu-item {
+    font-size: 12px;
+  }
+
+  .menu-item:hover {
+    background-color: #ff5a35;
+  }
+
+  .buy-wrap {
+    bottom: 5%;
+  }
+
+  .buy-button {
+    padding: 4px;
+    font-size: 8px;
+  }
+
+  .buy-overlay {
+    display: none;
+  }
+
+  .join-button {
+    font-size: 20px;
+  }
+
+  .share-button-wrap {
+    bottom: 0;
+  }
+
+  .share-button {
+    width: 30%;
+    padding: 0 2px;
+    font-size: 8px;
+  }
+
+  .share-button > div {
+    margin: 2px;
+  }
+
+  .share-button > img {
+    width: 10%;
+  }
 }
