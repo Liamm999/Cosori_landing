@@ -284,7 +284,6 @@ video {
     left: 0;
     bottom: 0;
     z-index: 10;
-    top: 10%;
   }
 
   .game-img {
@@ -420,6 +419,5 @@ video {
     left: 0;
     bottom: 0;
     z-index: 10;
-    top: 15%;
   }
 }
